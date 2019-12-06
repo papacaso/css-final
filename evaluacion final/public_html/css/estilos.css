@@ -1,0 +1,302 @@
+body{
+    font-family: Dancing Script;
+    background-color: #02010A;
+    margin: 0px;
+    
+}
+#contenido{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#cabecera{
+    background-color: #5b7989;
+    border-radius: 10px 10px 0 0;
+    padding: 15px;
+    color: white;
+    
+    font-size: 30px;
+    
+}
+header::before{ 
+    content: "Comenzando con la fotografía";
+    text-shadow: 2px 2px 2px #02010a;
+}
+nav {
+    float: right;
+    padding: 0.5% 2% 0 0;  
+}
+nav a{
+    color: inherit;
+    font-size: 20px;
+}
+.actual{
+    text-decoration: none;
+}
+img{
+    box-shadow: 2px 2px 2px #02010A;
+}
+.central{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1px;
+    width: 90%;
+    
+}
+section article{
+    background-color: #82c3a6;
+    margin: 0px;
+}
+.secundaria{
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #d5c75f;
+    
+}
+
+.secundaria>a{
+    flex: 0 0;
+}
+.izquierda{
+    order: 1;
+}
+.derecha{
+    order: 2;
+}
+.secundaria>a>figure>img{
+    border: 1px solid black;
+    width: 320px;
+}
+.secundaria a figure figcaption{
+    color: black;
+    text-align: center;
+    
+}
+footer{
+    margin: 0px;
+    border-radius: 0px 0px 10px 10px; 
+    background-color: #C6d5c5;  
+    padding: 5px;
+    font-size: 20px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1 0;
+}
+#pie_de_pagina a{
+    color: black;
+}
+li{
+    list-style-type: none;
+}
+/****paisaje.html****/
+.paisajes{
+    margin: 0px;
+    background-color:#d5c75f; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+}
+.paisajes>div{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.paisajes>div>img{
+    flex: 1 1;
+    border: 1px solid black;
+    width: 250px;
+}
+.paisajes>div:first-child>img {
+  filter: blur(10px);
+}
+
+.paisajes>div:nth-child(3)>img {
+  filter: sepia(90%);
+}
+
+.paisajes>div:nth-child(even)>img {
+  filter: grayscale(100%);
+}
+#paisaje01{
+    order: 1;
+    margin-top: 20px;
+}
+#paisaje02{
+    order: 2;
+    margin-top: 20px;
+}
+#paisaje03{
+    order: 3;
+    margin-top: 20px;
+}
+#paisaje04{
+    order: 4;
+}
+#paisaje05{
+    order: 5; 
+}
+#paisaje06{
+    order: 6; 
+}
+/****retratos.html****/
+.Retratos{
+    margin: 0px;
+    background-color:#d5c75f; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+}
+.Retratos>div{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.Retratos>div>img{
+    flex: 1 1;
+    border: 1px solid black;
+    width: 250px;
+}
+.Retratos>div:first-child>img {
+  filter: blur(10px);
+}
+
+.Retratos>div:nth-child(3)>img {
+  filter: sepia(90%);
+}
+
+.Retratos>div:nth-child(even)>img {
+  filter: grayscale(100%);
+}
+#retrato01{
+    order: 1;
+    margin-top: 20px;
+}
+#retrato02{
+    order: 2;
+    margin-top: 20px;
+}
+#retrato03{
+    order: 3;
+    margin-top: 20px;
+}
+#retrato04{
+    order: 4;
+}
+#retrato05{
+    order: 5; 
+}
+#retrato06{
+    order: 6; 
+}
+/******estilos responsivos*****/
+@media(max-width:899px){
+    #contenido{
+        margin: 0px;
+        width: 100%;
+    }
+    header{
+        text-align: center
+    }
+    nav{
+        float: none;       
+    }
+    .central{
+        width: 90%;
+    }
+    .secundaria{
+        flex-direction: column;
+    }
+    .secundaria>a{
+        width: 90%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .secundaria>a>figure>img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 220px;
+    }
+    footer{
+        flex-direction: column;
+    }
+    #pie_de_pagina{
+        height: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /******* paisajes.html *******/
+
+  .paisajes {
+      flex-direction: column;
+  }
+  .paisajes>div {
+    width: 100%;
+  }
+  #paisaje_02 {
+    margin-top: 0px
+  }
+  #paisaje_03 {
+    margin-top: 0px
+  }
+  #paisaje_04 {
+    margin-bottom: 15px;
+  }
+  #paisaje_05 {
+    margin-bottom: 15px;
+  }
+  #paisaje_06 {
+    margin-bottom: 15px;
+  }
+
+  .paisajes>div>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+  }
+
+
+  /******* rertratos.html *******/
+
+  .retratos {
+      flex-direction: column;
+     
+  }
+
+  .retratos>div {
+    width: 100%;
+  }
+
+  #retrato_02 {
+    margin-top: 0px
+  }
+  #retrato_03 {
+    margin-top: 0px
+  }
+  #retrato_04 {
+    margin-bottom: 15px;
+  }
+  #retrato_05 {
+    margin-bottom: 15px;
+  }
+  #retrato_06 {
+    margin-bottom: 15px;
+  }
+
+  .retratos>div>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+  }
+}
